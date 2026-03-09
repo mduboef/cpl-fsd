@@ -2,13 +2,13 @@
 alg: CPL_FSD
 alg_kwargs:
   alpha: 0.1
-  bcCoeff: 0.0
+  bcCoeff: 0.1
   bcData: all
   # beta controls the margin/temperature of the FSD surrogate loss.
   # logistic: smooth, continuously penalises all quantile violations.
   # hinge_sq: quadratic penalty only when preferred quantile < rejected + beta.
   # least_squares: IPO-style, penalises both over- and under-satisfaction.
-  fsdBeta: 1.0
+  fsdBeta: 0.1
   fsdLossType: logistic
   bcSteps: 200000
 
